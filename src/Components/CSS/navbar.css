@@ -1,0 +1,9 @@
+/* .active{
+    text-decoration: underline;
+} */
+.hideNav{
+    display: hidden;
+}
+.navBelow{
+    box-shadow: 0px -1px 5px black;
+}

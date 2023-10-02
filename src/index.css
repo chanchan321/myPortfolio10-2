@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'poppins',sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,500);
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{
+  height: 0px;
+  width: 0px;
+  background-color: #001C30;
+  filter: blur();
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #F6F4EB;
+  width: 1px;
+  opacity: 0.5;
+  border-radius:10px;
+}
+/* SCROLLBAR */
+
+
+
+
+
+
+
+
+.example{
+  fill: none;
+}
+.example rect{
+  stroke-dasharray: 800;
+  stroke-dashoffset: 700;
+  filter: drop-shadow( 4px 4px 2px red);
+  animation: dash 1s linear forwards infinite alternate;
+}
+@keyframes dash {
+    from {
+      stroke-dashoffset: 800;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+.hidescroll{
+  overflow: hidden ;
+}
